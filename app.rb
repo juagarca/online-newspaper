@@ -25,7 +25,7 @@ private
 def fetchNewsAPI
   url = 'http://newsapi.org/v2/top-headlines?'\
       'country=gb&'\
-      'apiKey=a0d9fcce1a084d8c9ef11e0ac5aef47f'
+      'apiKey=ea52fc1b7d464d92bf6dcad699c04ef5'
 
   response_body = open(url).read
 

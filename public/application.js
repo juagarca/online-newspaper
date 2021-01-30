@@ -3,12 +3,15 @@ const input = document.getElementById('search-input');
 // if in search page add key up event to the search input
 if (document.getElementById('search-input')) {
   input.addEventListener('keyup', (event) => {
+    const container = document.querySelector(".cards-container");
+    container.innerHTML = "";
     const query = event.currentTarget.value;
+    const text = document.querySelector(".text");
 
     // If there's a query in the input
     if (query) {
-      const container = document.querySelector(".cards-container");
-      container.innerHTML = "";
+      text.innerHTML = "";
+      text.insertAdjacentHTML('beforeend', '<h3 style="margin: 16px 0 8px 0;">Click on the images below to read the full article</h3>');
 
       const url = 'http://newsapi.org/v2/everything?' +
             `q=${query}&` +
@@ -47,6 +50,8 @@ if (document.getElementById('search-input')) {
             container.insertAdjacentHTML('beforeend', cardHtml);
           });
         });
+    } else {
+      text.innerHTML = "";
     }
   });
 }
