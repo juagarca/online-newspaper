@@ -1,10 +1,13 @@
 <a class="button" href="/search">Search</a>
 
 <div class="content">
-  <div style="position: fixed; z-index: 998; top: 0; background: #EBEDEF; width: 100%;"><h2><mark style="background-color: #18396A; color: white;">Top 5 news in the UK</mark></h2></div>
-  <br> <br><br>
+  <div style="position: fixed; z-index: 998; top: 0; background: #EBEDEF; width: 100%;">
+    <h2><mark style="background-color: #18396A; color: white;">Top 10 news in the UK</mark></h2>
+  </div>
+  <br><br><br>
+  <h3>Click on the images below to read the full article</h3>
   <!-- Iterating through the articles and rendering a card for each -->
-  <% @top_5.each do |article| %>
+  <% @top_10.each do |article| %>
     <a href="<%= "#{article['url']}" %> " target="_blank">
       <div class="card">
         <!-- If the article doesn't have an image -->
@@ -13,10 +16,10 @@
         <% else %>
           <% image_url = 'images/news-background.jpg' %>
         <% end %>
-        <img src=<%= "#{article['urlToImage']}" %> />
+        <img src=<%= "#{image_url}" %> />
         <div class="card-info">
           <div>
-            <h2><mark style="background-color: #18396A; color: white;"><%= "#{article['title'].split('-')[0]}" %></mark></h2>
+            <h2><mark style="background-color: #18396A; color: white; line-height: 28px;"><%= "#{article['title']}" %></mark></h2>
             <p><%= "#{article['description']}" %></p>
           </div>
         </div>

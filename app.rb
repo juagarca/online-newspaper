@@ -11,7 +11,7 @@ end
 
 # Home
 get '/' do
-  @top_5 = fetchNewsAPI
+  @top_10 = fetchNewsAPI
   erb :index
 end
 
@@ -31,5 +31,5 @@ def fetchNewsAPI
   json_response = JSON.parse(response_body)
 
   # Returning top 5 articles
-  json_response['articles'].first(5)
+  json_response['articles'].first(10)
 end

@@ -1,12 +1,18 @@
 body {
   background: #EBEDEF;
-  posi
 }
 
 h2 {
   margin-left: 16px;
-  padding-bottom: 16px;
+  padding: 8px 0;
   color: #18396A;
+}
+
+h3 {
+  font-size: 14px;
+  margin-left: 16px;
+  padding-bottom: 8px;
+  color: #313443;
 }
 
 a:hover {
@@ -18,7 +24,6 @@ a:hover {
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 16px;
-
 }
 
 .card > img {
@@ -41,7 +46,6 @@ a:hover {
 
 .card p {
   font-size: 14px;
-  opacity: .7;
   margin: 0;
   color: #313443;
   font-weight: bolder;
@@ -57,8 +61,8 @@ a:hover {
 
 .button {
   position: fixed;
-  right: 8px;
-  top: 8px;
+  right: 16px;
+  top: 16px;
   font-size: 16px;
   padding: 6px 18px;
   border-radius: 26px;
