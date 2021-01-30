@@ -15,6 +15,10 @@ get '/' do
   erb :index
 end
 
+get '/search' do
+  erb :search
+end
+
 private
 
 def fetchNewsAPI

@@ -10,3 +10,6 @@ response_body = open(url).read
 json_response = JSON.parse(response_body)
 
 top_5_articles = json_response['articles'].first(5)
+
+
+

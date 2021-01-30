@@ -1,23 +1,44 @@
+body {
+  background: #EBEDEF;
+  posi
+}
+
+h1 {
+  margin-left: 16px;
+  padding-bottom: 16px;
+  color: #18396A;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #18396A;
+}
+
 .card {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 16px;
 }
 
 .card > img {
-  height: 200px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
 
 .card h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
 
 .card p {
-  font-size: 12px;
+  font-size: 14px;
   opacity: .7;
   margin: 0;
 }
@@ -28,4 +49,26 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+}
+
+.button {
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  font-size: 16px;
+  padding: 6px 18px;
+  border-radius: 26px;
+  background: #18396A;
+  color: white;
+  border: 1px solid #18396A;
+
+}
+
+.button:hover {
+  border: 1px solid #18396A;
+  background: white;
+  color: #18396A;
+  /*font-weight: bolder;*/
+
+  transition: all 0.5s ease;
 }
