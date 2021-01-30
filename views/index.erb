@@ -1,3 +1,17 @@
-<p>
-  I'm in a <em>view</em>!
-</p>
+<h1>Top 5 news in the UK</h1>
+
+<% @top_5.each do |article| %>
+  <div class="card">
+    <img src=<%= "#{article['urlToImage']}" %> />
+    <div class="card-info">
+      <div>
+        <h2><%= "#{article['title'].split('-')[0]}" %></h2>
+        <p><%= "#{article['description']}" %></p>
+      </div>
+      <h2 class="card-link"><a href=<%= "#{article['url']}" %>>Link to article</a></h2>
+    </div>
+  </div>
+<% end %>
+
+
+
