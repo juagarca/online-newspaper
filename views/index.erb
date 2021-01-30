@@ -1,7 +1,7 @@
 <a class="button" href="/search">Search</a>
 
 <div class="content">
-  <h1><mark style="background-color: #18396A; color: white;">Top 5 news in the UK</mark></h1>
+  <h2><mark style="background-color: #18396A; color: white;">Top 5 news in the UK</mark></h2>
   <!-- Iterating through the articles and rendering a card for each -->
   <% @top_5.each do |article| %>
     <a href="<%= "#{article['url']}" %> " target="_blank">
