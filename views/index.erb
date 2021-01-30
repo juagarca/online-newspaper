@@ -1,7 +1,8 @@
 <a class="button" href="/search">Search</a>
 
 <div class="content">
-  <h2><mark style="background-color: #18396A; color: white;">Top 5 news in the UK</mark></h2>
+  <div style="position: fixed; z-index: 998; top: 0; background: #EBEDEF; width: 100%;"><h2><mark style="background-color: #18396A; color: white;">Top 5 news in the UK</mark></h2></div>
+  <br> <br><br>
   <!-- Iterating through the articles and rendering a card for each -->
   <% @top_5.each do |article| %>
     <a href="<%= "#{article['url']}" %> " target="_blank">
@@ -15,7 +16,7 @@
         <img src=<%= "#{article['urlToImage']}" %> />
         <div class="card-info">
           <div>
-            <h2><%= "#{article['title'].split('-')[0]}" %></h2>
+            <h2><mark style="background-color: #18396A; color: white;"><%= "#{article['title'].split('-')[0]}" %></mark></h2>
             <p><%= "#{article['description']}" %></p>
           </div>
         </div>
