@@ -1,7 +1,7 @@
 # Online Newspaper
 
 ### Introduction
-This project is a simple online newspaper featuring the current top 10 news in the UK. It also includes a search functionality which allows you to search a keyword and retrieves popular news stories from around the world. 
+This project is a simple online newspaper featuring the current top 10 news in the UK. It also includes a search functionality which allows you to search a keyword and retrieves popular news stories from around the world.
 
 The data is retrieved via News API
 https://newsapi.org/
@@ -27,7 +27,6 @@ $ gem install sinatra
 $ bundle install
 $ bundle exec ruby app.rb
 ```
-
 
 ### License
 **Free Software**
